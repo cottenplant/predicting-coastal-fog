@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8e3b6b-e067-4044-b9ed-33e3c078b021" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/June Gloom.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/June Gloom.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/June Gloom-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/June Gloom.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Wug API Request.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Wug API Request.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/june_gloom.py" beforeDir="false" afterPath="$PROJECT_DIR$/june_gloom.py" afterDir="false" />
     </list>
@@ -18,8 +20,8 @@
       <file leaf-file-name="june_gloom.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/june_gloom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="555">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding>
                 <element signature="e#22#62#0" expanded="true" />
               </folding>
@@ -29,7 +31,11 @@
       </file>
       <file leaf-file-name="traffic_collisions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3690">
+              <caret line="261" selection-start-line="261" selection-end-line="261" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -52,6 +58,8 @@
         <option value="$PROJECT_DIR$/years/main.py" />
         <option value="$PROJECT_DIR$/years/normal_year.py" />
         <option value="$PROJECT_DIR$/years/leap_year.py" />
+        <option value="$PROJECT_DIR$/Concat CSV" />
+        <option value="$PROJECT_DIR$/noaa request.py" />
         <option value="$PROJECT_DIR$/june_gloom.py" />
       </list>
     </option>
@@ -68,6 +76,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,21 +89,20 @@
               <item name="june-gloom-analysis" type="462c0819:PsiDirectoryNode" />
               <item name="raw_data" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="june-gloom-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="june-gloom-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="years" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/elibot" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NOAA" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -107,6 +115,31 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="noaa request" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ksmo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NOAA/noaa request.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.noaa request" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -123,14 +156,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="380" y="8" width="1408" height="1053" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32979852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -141,7 +174,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -153,6 +185,66 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/june_gloom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3915">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/june_gloom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3915">
+          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/june_gloom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/june_gloom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/june_gloom.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -201,27 +293,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/years/main.py" />
     <entry file="file://$PROJECT_DIR$/years/request_normal_year.py" />
-    <entry file="file://$PROJECT_DIR$/years/normal_year.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/years/leap_year.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="53" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/years/normal_year.py" />
+    <entry file="file://$PROJECT_DIR$/years/leap_year.py" />
+    <entry file="file://$PROJECT_DIR$/Concat CSV" />
     <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3690">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NOAA/noaa request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="156" column="33" lean-forward="true" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/june_gloom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="555">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding>
             <element signature="e#22#62#0" expanded="true" />
           </folding>

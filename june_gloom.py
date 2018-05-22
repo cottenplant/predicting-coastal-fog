@@ -3,8 +3,6 @@ from datetime import datetime, timedelta
 import time
 from collections import namedtuple
 import requests
-import glob
-import os
 import pandas as pd
 
 month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -22,13 +20,15 @@ def init():
 
 def weather_data_features():
     global combined_weather_df, pt_june_gloom_df, fog_days_df, rain_days_df, pt_temp_df, min_max_temp_df, \
-        pt_fog_by_month
+        pt_fog_by_month, year_min, year_max
     combined_weather_df['date'] = pd.to_datetime(combined_weather_df['date'])
     combined_weather_df['year'] = combined_weather_df['date'].apply(lambda date: date.year)
     combined_weather_df['month'] = combined_weather_df['date'].apply(lambda date: date.month)
     combined_weather_df['day'] = combined_weather_df['date'].apply(lambda date: date.day)
     combined_weather_df['dayofweek'] = combined_weather_df['date'].apply(lambda date: date.dayofweek)
     combined_weather_df.drop('Unnamed: 0', axis=1, inplace=True)
+    year_min = combined_weather_df['year'].unique().min()
+    year_max = combined_weather_df['year'].unique().max()
     pt_june_gloom_df = combined_weather_df.pivot_table(index='month', columns=['day', 'year'], values='fog')
     fog_days_df = combined_weather_df[(combined_weather_df['fog'] == 1) & (combined_weather_df['rain'] == 0)][
         ['month', 'year', 'meanwdird', 'meantempm', 'meandewptm', 'meanpressurem', 'fog']]
@@ -47,18 +47,20 @@ def weather_data_features():
     pt_fog_by_month = pt_fog_by_month.unstack(level='year')
 
 
-def wug_data_concat():
-    file_1 = pd.read_csv(data_dir + "1997")
-    file_2 = pd.read_csv(data_dir + "1998")
-    file_3 = pd.read_csv(data_dir + "1999")
-    file_4 = pd.read_csv(data_dir + "2000")
-    file_5 = pd.read_csv(data_dir + "2001")
-    file_6 = pd.read_csv(data_dir + "2002")
-    file_7 = pd.read_csv(data_dir + "2003")
-    file_8 = pd.read_csv(data_dir + "2004")
-    file_9 = pd.read_csv(data_dir + "2005")
-    concat_weather_df = pd.concat([file_1, file_2, file_3, file_4, file_5, file_6, file_7, file_8, file_9])
-#    combined_weather_df = pd.concat(map(pd.read_csv, glob.glob(os.path.join('', data_dir + "1997")))
+def wug_data_concat(data_dir):
+    file_01 = pd.read_csv(data_dir + "1997")
+    file_02 = pd.read_csv(data_dir + "1998")
+    file_03 = pd.read_csv(data_dir + "1999")
+    file_04 = pd.read_csv(data_dir + "2000")
+    file_05 = pd.read_csv(data_dir + "2001")
+    file_06 = pd.read_csv(data_dir + "2002")
+    file_07 = pd.read_csv(data_dir + "2003")
+    file_08 = pd.read_csv(data_dir + "2004")
+    file_09 = pd.read_csv(data_dir + "2005")
+    file_10 = pd.read_csv(data_dir + "2006")
+    file_11 = pd.read_csv(data_dir + "2007")
+    concat_weather_df = pd.concat([file_01, file_02, file_03, file_04, file_05, file_06, file_07, file_08, file_09,
+                                   file_10, file_11])
     concat_weather_df.to_csv(data_dir + combined_weather_file)
 
 
