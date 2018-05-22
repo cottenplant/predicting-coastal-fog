@@ -11,6 +11,9 @@ month_dict = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun',
 data_dir = "/home/samco/_ds/june-gloom-analysis/raw_data/"
 combined_weather_file = "combined_weather_data.csv"
 combined_weather_df = pd.DataFrame()
+api_key = '8940b5f3356ab273'
+base_url = "http://api.wunderground.com/api/{}/history_{}/q/CA/ksmo.json"
+records = []
 
 
 def init():
@@ -47,7 +50,8 @@ def weather_data_features():
     pt_fog_by_month = pt_fog_by_month.unstack(level='year')
 
 
-def wug_data_concat(data_dir):
+def wug_data_concat():
+    global data_dir
     file_01 = pd.read_csv(data_dir + "1997")
     file_02 = pd.read_csv(data_dir + "1998")
     file_03 = pd.read_csv(data_dir + "1999")
@@ -65,21 +69,19 @@ def wug_data_concat(data_dir):
 
 
 def wug_api_request(year):
-    api_key = '8940b5f3356ab273'
-    base_url = "http://api.wunderground.com/api/{}/history_{}/q/CA/ksmo.json"
-    data_dir = "/home/samco/_ds/june-gloom-analysis/raw_data/"
+    global data_dir, target_date
     target_date = datetime(year, 1, 1)
     if year % 4 == 0:
         leap = 366
     else:
-        leap = 365
+        leap = 2
     features = ["date", "fog", "rain", "meanwdird", "meanwindspdm", "meantempm", "meandewptm", "meanpressurem",
                 "maxhumidity", "minhumidity", "maxtempm", "mintempm", "maxdewptm", "mindewptm",
                 "maxpressurem", "minpressurem", "precipm"]
     DailySummary = namedtuple("DailySummary", features)
 
-    def extract_weather_data(base_url, api_key, target_date, days):
-        records = []
+    def extract_weather_data(days):
+        global records, api_key, base_url, target_date
         for _ in range(days):
             request = base_url.format(api_key, target_date.strftime('%Y%m%d'))
             response = requests.get(request)
@@ -106,6 +108,6 @@ def wug_api_request(year):
             time.sleep(6)
             target_date += timedelta(days=1)
         return records
-    records = extract_weather_data(base_url, api_key, target_date, leap)
+    records = extract_weather_data(leap)
     r = pd.DataFrame(records)
     r.to_csv(data_dir + '{}'.format(target_date.year), index=False)
