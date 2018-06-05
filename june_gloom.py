@@ -5,20 +5,52 @@ from collections import namedtuple
 import requests
 import pandas as pd
 
+data_dir = r"raw_data/"
+combined_weather_file = "combined_weather_data.csv"
+daily_noaa_file = "CDO4274757652424.txt"
+enso_sst_file = "sst_anomaly_3month_mean.csv"
+
 month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 month_dict = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 
               7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'}
-data_dir = "/home/samco/_ds/june-gloom-analysis/raw_data/"
-combined_weather_file = "combined_weather_data.csv"
+enso_dict = {
+    1973: 'el nino', 1978: 'el nino', 1980: 'el nino', 1983: 'el nino', 1987: 'el nino',
+    1988: 'el nino', 1992: 'el nino', 1995: 'el nino', 1998: 'el nino', 2003: 'el nino',
+    2007: 'el nino', 2010: 'el nino', 1971: 'la nina', 1974: 'la nina', 1976: 'la nina',
+    1989: 'la nina', 1999: 'la nina', 2000: 'la nina', 2008: 'la nina', 2011: 'la nina',
+    2012: 'la nina'
+}
+dict_enso_sst = {}
+
 combined_weather_df = pd.DataFrame()
+df_noaa = pd.DataFrame()
+df_enso_sst = pd.DataFrame()
+
+
 api_key = '8940b5f3356ab273'
 base_url = "http://api.wunderground.com/api/{}/history_{}/q/CA/ksmo.json"
 records = []
 
 
 def init():
-    global combined_weather_df
+    global combined_weather_df, df_noaa, df_enso_sst
     combined_weather_df = pd.read_csv(data_dir + combined_weather_file)
+#    combined_noaa_sst_df = pd.read_csv(data_dir + )
+    df_noaa = pd.read_csv(data_dir + daily_noaa_file)
+    df_enso_sst = pd.read_csv(data_dir + enso_sst_file)
+
+
+def noaa_clean():
+    global df_noaa, df_lax, enso_dict
+    df_lax = df_noaa[df_noaa['STN---'] == 722950]
+    df_lax.reset_index(inplace=True)
+    df_lax.drop(['index', 'STN---', 'WBAN ', '  ', '  .1', '  .2', '  .3', '  .4', '  .5', 'Unnamed: 22'], axis=1,
+                inplace=True)
+    df_lax[' YEARMODA'] = pd.to_datetime(df_lax[' YEARMODA'], format='%Y%m%d')
+    df_lax['month'] = df_lax[' YEARMODA'].apply(lambda date: date.month)
+    df_lax['year'] = df_lax[' YEARMODA'].apply(lambda date: date.year)
+    df_lax['enso'] = df_lax['year'].map(enso_dict)
+    df_lax['enso'].fillna('neutral', inplace=True)
 
 
 def weather_data_features():
@@ -63,8 +95,13 @@ def wug_data_concat():
     file_09 = pd.read_csv(data_dir + "2005")
     file_10 = pd.read_csv(data_dir + "2006")
     file_11 = pd.read_csv(data_dir + "2007")
+    file_12 = pd.read_csv(data_dir + "2008")
+    file_13 = pd.read_csv(data_dir + "2009")
+    file_14 = pd.read_csv(data_dir + "2010")
+    file_15 = pd.read_csv(data_dir + "2011")
+    file_16 = pd.read_csv(data_dir + "2012")
     concat_weather_df = pd.concat([file_01, file_02, file_03, file_04, file_05, file_06, file_07, file_08, file_09,
-                                   file_10, file_11])
+                                   file_10, file_11, file_12, file_13, file_14, file_15, file_16])
     concat_weather_df.to_csv(data_dir + combined_weather_file)
 
 
@@ -74,7 +111,7 @@ def wug_api_request(year):
     if year % 4 == 0:
         leap = 366
     else:
-        leap = 2
+        leap = 365
     features = ["date", "fog", "rain", "meanwdird", "meanwindspdm", "meantempm", "meandewptm", "meanpressurem",
                 "maxhumidity", "minhumidity", "maxtempm", "mintempm", "maxdewptm", "mindewptm",
                 "maxpressurem", "minpressurem", "precipm"]
