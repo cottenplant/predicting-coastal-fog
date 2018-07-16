@@ -22,9 +22,8 @@ def noaa_clean():
     global df_noaa, df_lax
     df_lax = df_noaa.loc[df_noaa['STN---'] == 722950].copy()
     df_lax.reset_index(inplace=True)
-    df_lax.drop(['index', 'STN---', 'WBAN ', '  ', '  .1', '  .2', '  .3', '  .4', '  .5', 'Unnamed: 22'], axis=1,
-                inplace=True)
     df_lax.columns = df_lax.columns.str.strip()
+    df_lax.drop(['index', 'STN---', 'WBAN', '', '.1', '.2', '.3', '.4', '.5', 'Unnamed: 22'], axis=1, inplace=True)
     df_lax['YEARMODA'] = pd.to_datetime(df_lax['YEARMODA'], format='%Y%m%d')
     df_lax['month'] = df_lax['YEARMODA'].apply(lambda date: date.month)
     df_lax['year'] = df_lax['YEARMODA'].apply(lambda date: date.year)

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8e3b6b-e067-4044-b9ed-33e3c078b021" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wug_api_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/June Gloom - KSMO Wunderground Data-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/NOAA Daily Summary-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Wug API Request-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/June Gloom - KSMO Wunderground Data.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOAA Daily Summary.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wug API Request.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOAA Daily Summary - KLAX.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NOAA Daily Summary - KLAX.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wug API Data - KSMO.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Wug API Data - KSMO.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wunderground API Request.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Wunderground API Request.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/june_gloom.py" beforeDir="false" afterPath="$PROJECT_DIR$/june_gloom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wug_api_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/wug_api_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,32 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="june_gloom.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="june_gloom.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/june_gloom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wug_api_data.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wug_api_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="36" column="97" selection-start-line="36" selection-start-column="97" selection-end-line="36" selection-end-column="97" />
-              <folding>
-                <element signature="e#22#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="traffic_collisions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../jupiter/20180322 - LA Traffic Collisions 2010 to 2017/traffic_collisions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="261" selection-start-line="261" selection-end-line="261" />
+            <state relative-caret-position="465">
+              <caret line="31" column="78" lean-forward="true" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -73,15 +49,15 @@
         <option value="$PROJECT_DIR$/years/leap_year.py" />
         <option value="$PROJECT_DIR$/Concat CSV" />
         <option value="$PROJECT_DIR$/noaa request.py" />
-        <option value="$PROJECT_DIR$/june_gloom.py" />
         <option value="$PROJECT_DIR$/wunderground_api_data.py" />
         <option value="$PROJECT_DIR$/wug_api_data.py" />
+        <option value="$PROJECT_DIR$/june_gloom.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="566" />
-    <option name="y" value="95" />
+    <option name="x" value="595" />
+    <option name="y" value="70" />
     <option name="width" value="1212" />
     <option name="height" value="951" />
   </component>
@@ -91,7 +67,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,10 +78,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../titanic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mnist-kaggle" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
@@ -188,7 +164,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="566" y="95" width="1212" height="951" extended-state="0" />
+    <frame x="615" y="26" width="1212" height="951" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15264027" />
@@ -219,6 +195,33 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wug_api_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/june_gloom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wug_api_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/june_gloom.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -489,20 +492,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/june_gloom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wug_api_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="36" column="97" selection-start-line="36" selection-start-column="97" selection-end-line="36" selection-end-column="97" />
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#22#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/june_gloom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="78" lean-forward="true" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
         </state>
       </provider>
     </entry>

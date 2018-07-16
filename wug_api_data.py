@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 from datetime import datetime, timedelta
+import glob
+import requests
 import time
 from collections import namedtuple
-import requests
 import pandas as pd
 
 # Static Vars
 data_dir = r"raw_data/"
+wug_temp_dir = r"raw_data/wug_api_import"
 combined_weather_file = "combined_weather_data.csv"
 enso_sst_file = "sst_anomaly_3month_mean.csv"
 month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -67,30 +69,13 @@ def impute_trace_precip(col):
 
 
 def wug_data_concat():
-    global data_dir
-    file_01 = pd.read_csv(data_dir + "1997")
-    file_02 = pd.read_csv(data_dir + "1998")
-    file_03 = pd.read_csv(data_dir + "1999")
-    file_04 = pd.read_csv(data_dir + "2000")
-    file_05 = pd.read_csv(data_dir + "2001")
-    file_06 = pd.read_csv(data_dir + "2002")
-    file_07 = pd.read_csv(data_dir + "2003")
-    file_08 = pd.read_csv(data_dir + "2004")
-    file_09 = pd.read_csv(data_dir + "2005")
-    file_10 = pd.read_csv(data_dir + "2006")
-    file_11 = pd.read_csv(data_dir + "2007")
-    file_12 = pd.read_csv(data_dir + "2008")
-    file_13 = pd.read_csv(data_dir + "2009")
-    file_14 = pd.read_csv(data_dir + "2010")
-    file_15 = pd.read_csv(data_dir + "2011")
-    file_16 = pd.read_csv(data_dir + "2012")
-    concat_weather_df = pd.concat([file_01, file_02, file_03, file_04, file_05, file_06, file_07, file_08, file_09,
-                                   file_10, file_11, file_12, file_13, file_14, file_15, file_16])
+    global data_dir, wug_temp_dir
+    concat_weather_df = pd.concat(map(pd.read_csv, glob.glob(wug_temp_dir + '/*')))
     concat_weather_df.to_csv(data_dir + combined_weather_file)
 
 
 def wug_api_request(year):
-    global data_dir, target_date
+    global wug_temp_dir, target_date
     target_date = datetime(year, 1, 1)
     if year % 4 == 0:
         leap = 366
@@ -131,4 +116,4 @@ def wug_api_request(year):
         return records
     records = extract_weather_data(leap)
     r = pd.DataFrame(records)
-    r.to_csv(data_dir + '{}'.format(target_date.year), index=False)
+    r.to_csv(wug_temp_dir + '{}'.format(target_date.year), index=False)
