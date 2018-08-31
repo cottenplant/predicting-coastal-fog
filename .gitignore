@@ -1,2 +1,7 @@
 /raw_data/
 /data/
+/cleaning_data/
+/eda/
+/ml-test/
+/__pycache__/
+
