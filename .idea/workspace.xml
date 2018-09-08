@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8e3b6b-e067-4044-b9ed-33e3c078b021" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/classifier_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coastal_climate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ksmo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ksmo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/ML - Predicting Fog - KSMO-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/ML - Predicting Fog - KSMO-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML - Predicting Fog - KSMO.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ML - Predicting Fog - KSMO.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Figures-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/ML - Predicting Fog - KSMO-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML - Predicting Fog - KSMO.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coastal_climate.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/pairplot_fog.png" beforeDir="false" afterPath="$PROJECT_DIR$/figures/pairplot_fog.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,59 +34,58 @@
     <session id="1803106513">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1582" />
+          <entry key="dummy" value="21" />
+          <entry key="py" value="3044" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1582" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Python" value="3044" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coastal_climate.py">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clean_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="184">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1535763936448" expanded="true" signature="618:1003" ph="..." />
-                <marker date="1535763936448" expanded="true" signature="1045:1137" ph="..." />
+                <marker date="1536350037732" expanded="true" signature="584:969" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classifier_pipeline.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+            <state relative-caret-position="300">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1535766941570" expanded="true" signature="717:722" ph="..." />
-                <marker date="1535766941570" expanded="true" signature="1326:1331" ph="..." />
-                <marker date="1535766941570" expanded="true" signature="1517:2501" ph="..." />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,16 +116,20 @@
         <option value="$PROJECT_DIR$/wunderground_api_data.py" />
         <option value="$PROJECT_DIR$/wug_api_data.py" />
         <option value="$PROJECT_DIR$/june_gloom.py" />
+        <option value="$PROJECT_DIR$/svm_rain.py" />
         <option value="$PROJECT_DIR$/coastal_climate.py" />
+        <option value="$PROJECT_DIR$/rfc_rain.py" />
+        <option value="$PROJECT_DIR$/grad_boost_fog.py" />
         <option value="$PROJECT_DIR$/classifier_pipeline.py" />
+        <option value="$PROJECT_DIR$/model_search.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1932" />
-    <option name="y" value="51" />
+    <option name="x" value="659" />
+    <option name="y" value="27" />
     <option name="width" value="1212" />
-    <option name="height" value="951" />
+    <option name="height" value="1016" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -165,7 +172,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.model_search">
+    <configuration name="classifier_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ksmo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier_pipeline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="coastal_climate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ksmo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,7 +206,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/coastal_climate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clean_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,8 +215,82 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="grad_boost_fog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ksmo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grad_boost_fog.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ksmo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rfc_rain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ksmo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rfc_rain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.coastal_climate" />
+      <item itemvalue="Python.rfc_rain" />
+      <item itemvalue="Python.grad_boost_fog" />
+      <item itemvalue="Python.classifier_pipeline" />
+      <item itemvalue="Python.model_search" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model_search" />
+        <item itemvalue="Python.classifier_pipeline" />
+        <item itemvalue="Python.rfc_rain" />
+        <item itemvalue="Python.grad_boost_fog" />
         <item itemvalue="Python.coastal_climate" />
       </list>
     </recent_temporary>
@@ -207,16 +309,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1932" y="51" width="1212" height="951" extended-state="0" />
+    <frame x="659" y="27" width="1212" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15181518" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15559293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32855436" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3611738" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954853" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -228,6 +330,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.096468106" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29693878" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954853" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -255,27 +376,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wug_api_data.py" />
     <entry file="file://$PROJECT_DIR$/june_gloom.py" />
-    <entry file="file://$PROJECT_DIR$/coastal_climate.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/coastal-climate-analysis/lib/python3.6/site-packages/sklearn/utils/multiclass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="168">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/coastal-climate-analysis/lib/python3.6/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="630" selection-start-line="630" selection-end-line="630" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rfc_rain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1535763936448" expanded="true" signature="618:1003" ph="..." />
-            <marker date="1535763936448" expanded="true" signature="1045:1137" ph="..." />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grad_boost_fog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classifier_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+        <state relative-caret-position="544">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1535766941570" expanded="true" signature="717:722" ph="..." />
-            <marker date="1535766941570" expanded="true" signature="1326:1331" ph="..." />
-            <marker date="1535766941570" expanded="true" signature="1517:2501" ph="..." />
+            <marker date="1536350037732" expanded="true" signature="584:969" ph="..." />
           </folding>
         </state>
       </provider>

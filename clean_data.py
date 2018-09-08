@@ -12,7 +12,6 @@ plt.rcParams['figure.figsize'] = 12, 8
 def init():
     # Dirs
     data_dir = r'data/'
-    fig_dir = r'figures/'
 
     # File path
     wug_data_file = 'WUG_SMO_Data_Clean.csv'
@@ -22,7 +21,7 @@ def init():
     df_smo = clean_data_wug(data_dir, wug_data_file)
     df_lax = clean_data_noaa(data_dir, noaa_data_file)
 
-    return df_smo, df_lax
+    return df_smo
 
 
 def clean_data_wug(directory, filename):
