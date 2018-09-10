@@ -26,12 +26,14 @@ def init():
     print("Decision tree accuracy:", dtree_score)
 
     accuracy_df = get_model(X_train, X_test, y_train, y_test)
+
     print(accuracy_df)
 
 
 def dtree(X_train, X_test, y_train, y_test):
     dtree = DecisionTreeClassifier()
     dtree.fit(X_train, y_train)
+
     return dtree.score(X_test, y_test)
 
 
@@ -62,11 +64,13 @@ def get_model(X_train, X_test, y_train, y_test):
         pred = clf.predict(X_test)
         acc.append(precision_score(pred, y_test))
 
-    m = {'Algorithm': model_names, 'Accuracy': acc}
+    m = {'Algorithm': model_names, 'Precision': acc}
 
     acc_frame = pd.DataFrame(m)
-    acc_frame = acc_frame.set_index('Accuracy').sort_index(ascending=False)
+    acc_frame = acc_frame.set_index('Precision').sort_index(ascending=False)
+
     return acc_frame
 
 
-init()
+if __name__ == "__main__":
+    init()
