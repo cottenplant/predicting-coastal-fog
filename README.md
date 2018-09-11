@@ -1,3 +1,4 @@
+```
 =CLASSIFIER==
 ===SUMMARY===
 n = 1000
@@ -11,7 +12,7 @@ Linear SVM                    0.946546   0.000000  0.000000
 Logistic Regression           0.946282   0.012771  0.000329
 Random Forest Classifier      0.943096   0.366783  0.087023
 rbf SVM                       0.946498   0.000000  0.000000
-
+```
 
 ## Summary
 FogBot is a small tool to predict the occurrence of fog in a coastal region of Los Angeles, California, USA. After running the gamut of classifiers available in the scikit-learn machine learning package, the Decision Tree Classifer performed best in terms of recall while the Gradient Boosting Classifier achieved by far the highest precision. Accuracy on all the models was quite high. This discrepancy is likely due to an asymmetrical dataset; of the approximately 5400 daily measurements from Santa Monica Airport, fog occurred only on around 300 of these days.
