@@ -1,40 +1,46 @@
 import clean_data
 import pandas as pd
 
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import precision_score, accuracy_score, recall_score
+
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.svm import SVC, LinearSVC
-from sklearn.metrics import precision_score
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 
 
-def init():
+def main(rs):
     df_smo = clean_data.init()
     X = df_smo[['mdir', 'mspd', 'mtmp', 'mdew', 'mpressure', 'precipm']]
     y = df_smo['fog']
 
+    # Data Preprocessing
     sc = StandardScaler()
     X = sc.fit_transform(X)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=rs)
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=101)
+    # Try all Scikit-Learn Classifiers
+    results = get_model(X_train, X_test, y_train, y_test)
+    results = results.set_index('Algorithm')
+    print(results)
 
-    dtree_score = dtree(X_train, X_test, y_train, y_test)
-    print("Decision tree accuracy:", dtree_score)
-
-    accuracy_df = get_model(X_train, X_test, y_train, y_test)
-
-    print(accuracy_df)
+    return results
 
 
-def dtree(X_train, X_test, y_train, y_test):
+def decision_tree_result(X_train, X_test, y_train, y_test):
+    algo = 'Decision Tree Classifier'
     dtree = DecisionTreeClassifier()
     dtree.fit(X_train, y_train)
+    pred = dtree.predict(X_test)
+    score = dtree.score(X_test, y_test)
+    precision = precision_score(y_test, pred)
+    recall = recall_score(y_test, pred)
 
-    return dtree.score(X_test, y_test)
+    return algo, score, precision, recall
 
 
 def get_model(X_train, X_test, y_train, y_test):
@@ -57,20 +63,23 @@ def get_model(X_train, X_test, y_train, y_test):
                    'Gaussian NB']
 
     acc = []
+    prec = []
+    rec = []
 
     for model in range(len(models)):
         clf = models[model]
         clf.fit(X_train, y_train)
         pred = clf.predict(X_test)
-        acc.append(precision_score(pred, y_test))
+        acc.append(accuracy_score(y_test, pred))
+        prec.append(precision_score(y_test, pred))
+        rec.append(recall_score(y_test, pred))
 
-    m = {'Algorithm': model_names, 'Precision': acc}
+    m = {'Algorithm': model_names, 'Accuracy': acc, 'Precision': prec, 'Recall': rec}
 
-    acc_frame = pd.DataFrame(m)
-    acc_frame = acc_frame.set_index('Precision').sort_index(ascending=False)
+    report = pd.DataFrame(m)
 
-    return acc_frame
+    return report
 
 
 if __name__ == "__main__":
-    init()
+    main(rs=42)

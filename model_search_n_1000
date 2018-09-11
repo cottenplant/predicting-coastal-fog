@@ -1,0 +1,12 @@
+===SUMMARY===
+                              Accuracy  Precision    Recall
+Algorithm                                                  
+Decision Tree                 0.909068   0.195421  0.224249
+Gaussian NB                   0.934721   0.132978  0.038846
+Gradient Boosting Classifier  0.945638   0.467500  0.097002
+K-Nearest Neighbors           0.942225   0.301554  0.059547
+Linear SVM                    0.946546   0.000000  0.000000
+Logistic Regression           0.946282   0.012771  0.000329
+Random Forest Classifier      0.943096   0.366783  0.087023
+rbf SVM                       0.946498   0.000000  0.000000
+

@@ -1,10 +1,10 @@
-import current_conditions
+import request_conditions
 from sklearn.externals import joblib
 
 
 def predict():
-    input_features = current_conditions.main()
-    clf = joblib.load("dtree_model.pkl")
+    input_features = request_conditions.main()
+    clf = joblib.load("gbc_model.pkl")
     pred = clf.predict(input_features)
 
     return pred
