@@ -25,6 +25,8 @@ Datasets were acquired under an open license. KSMO data was downloaded via the W
 
 # Analyzing data and features
 ## trends
+![Alt](https://github.com/samcotten/coastal-climate-analysis/issues/2#issue-359562144)
+
 
 ## features
 ## cleaning the data
