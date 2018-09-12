@@ -14,6 +14,7 @@ from sklearn.naive_bayes import GaussianNB
 
 
 def main(rs):
+    # Import cleaned data set
     df_smo = clean_data.init()
     X = df_smo[['mdir', 'mspd', 'mtmp', 'mdew', 'mpressure', 'precipm']]
     y = df_smo['fog']
@@ -75,7 +76,6 @@ def get_model(X_train, X_test, y_train, y_test):
         rec.append(recall_score(y_test, pred))
 
     m = {'Algorithm': model_names, 'Accuracy': acc, 'Precision': prec, 'Recall': rec}
-
     report = pd.DataFrame(m)
 
     return report
