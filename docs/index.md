@@ -28,21 +28,4 @@ Datasets were acquired under an open license. KSMO data was downloaded via the W
 ![Alt](https://user-images.githubusercontent.com/25386879/45439620-26009e80-b66f-11e8-9c2a-fa0f7179cada.png)
 
 
-## features
-## cleaning the data
-
-# Methods, packages and toolkits
-
-
-# Data modeling
-## train/test
-## compare scikit-learn classifiers
-## select – precision, accuracy, recall
-
-# Publishing data
-## figures
-## fog-predict tool
-## FogBot announcements
-
-#Conclusions and future directions
-
+Check out the rest of the code @ [GitHub](https://github.com/samcotten/coastal-climate-analysis)
