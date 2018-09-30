@@ -2,21 +2,21 @@ import request_conditions
 from sklearn.externals import joblib
 
 
-def predict():
-    results = {}
-    models = ["dtree_model.pkl", "gbc_model.pkl"]
+def predict(models):
+    predictions = {}
     input_features = request_conditions.main()
-    for model in models:
+    for classifier in models:
         clf = joblib.load(model)
         pred = clf.predict(input_features)
-        results[model] = pred
+        predictions[classifier] = pred
 
-    return results
+    return predictions
 
 
 if __name__ == "__main__":
-    prediction = predict()
-    for model, results in prediction.items():
+    models_list = ["dtree_model.pkl", "gbc_model.pkl"]
+    prediction_results = predict(models_list)
+    for model, results in prediction_results.items():
         if results == [1]:
             print("{} model says.. the fog should roll in tonight!".format(model))
         elif results == [0]:

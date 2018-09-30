@@ -29,7 +29,6 @@ Datasets were acquired under an open license. KSMO data was downloaded via the W
 From the (above) 3d graphs, one can easily discern wind direction, speed and dew point relationships during the period of measurement : 1972 - 2018. Such a comprehenesive representative figure summarizes succinctly the relationshio\p betwewen wind directionn, speed and humidity. Not the 
 Grouping the trade winds (ocean breezes rich in water content an higher dew point are easiy distinguishable from the so-called "Santa Ana" or earsterly winds that occur in Fall and Winter, patterns of persistent high pressure which bring unusually dry and windy deserst air from the valleys to th East of Los Anglees.
 
-<<<<<<< HEAD
 ## features
 Stirpping down the many features into pricipal components involved eliminating derivative features (i.e. feature which we just conversions or derivations from raw observed data. We also edited for instance a column in the NOAA text which listed Fog, Rain, Snow, Hail, Thunderstorm and Tornado in a binary format to reflect real values for analyis. We selected the most relative and complete features for us in a gamute of machine leaarnning classifiers containd withing the scikit-learn ecosysteeyin
 
@@ -61,6 +60,3 @@ Please check soon for more updates!
 
 #Conclusions and future directions
 
-=======
-Check out the rest of the code @ [GitHub](https://github.com/samcotten/coastal-climate-analysis)
->>>>>>> d86dbab1d22577bb6912dfb34931de165c3d48a2
