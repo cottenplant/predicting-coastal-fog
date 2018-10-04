@@ -6,7 +6,7 @@ def predict(models):
     predictions = {}
     input_features = request_conditions.main()
     for classifier in models:
-        clf = joblib.load(model)
+        clf = joblib.load(classifier)
         pred = clf.predict(input_features)
         predictions[classifier] = pred
 
