@@ -71,4 +71,4 @@ def main():
 
     return prediction_results
 ```
-For more background info, check out [the documentation](https://samcotten.github.io/coastal-climate-analysis].
+For more background info, check out [the documentation](https://samcotten.github.io/coastal-climate-analysis).
