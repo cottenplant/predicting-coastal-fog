@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8e3b6b-e067-4044-b9ed-33e3c078b021" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/fog-predict-app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fog-predict-app/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fog-predict-app/dtree_model.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fog-predict-app/gbc_model.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fog-predict-app/request_conditions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ksmo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ksmo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtree_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dtree_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtree_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_dtree_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gbc_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/gbc_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gbc_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_gbc_model.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtree_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/dtree_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtree_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtree_model.py" afterDir="false" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
       <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request_conditions.py" beforeDir="false" afterPath="$PROJECT_DIR$/request_conditions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,14 +51,23 @@
     <session id="1803106513">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+<<<<<<< HEAD
+          <entry key="project.closed" value="17" />
+=======
+          <entry key="project.closed" value="15" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="6" />
+          <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.7" value="2" />
+<<<<<<< HEAD
+          <entry key="project.opened" value="18" />
+=======
+          <entry key="project.opened" value="16" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -43,7 +77,7 @@
           <entry key="ipynb" value="1" />
           <entry key="json" value="1" />
           <entry key="md" value="3" />
-          <entry key="py" value="44" />
+          <entry key="py" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -52,19 +86,29 @@
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="44" />
+          <entry key="Python" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="dummy" value="141" />
+          <entry key="py" value="11058" />
+=======
           <entry key="dummy" value="131" />
-          <entry key="py" value="10706" />
+          <entry key="py" value="10720" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="PLAIN_TEXT" value="141" />
+          <entry key="Python" value="11058" />
+=======
           <entry key="PLAIN_TEXT" value="131" />
-          <entry key="Python" value="10706" />
+          <entry key="Python" value="10720" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
         </counts>
       </usages-collector>
     </session>
@@ -74,8 +118,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/request_conditions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+<<<<<<< HEAD
+            <state relative-caret-position="177">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+=======
+            <state relative-caret-position="-198">
               <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -83,6 +132,16 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/predict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <marker date="1538917814177" expanded="true" signature="341:476" ph="..." />
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model_search.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dtree_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -107,22 +166,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="90">
+              <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/predict_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
               </folding>
             </state>
           </provider>
@@ -173,10 +221,15 @@
         <option value="$PROJECT_DIR$/dtree_predict.py" />
         <option value="$PROJECT_DIR$/docs/index.md" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/gbc_model.py" />
         <option value="$PROJECT_DIR$/gbc_predict.py" />
         <option value="$PROJECT_DIR$/model_search.py" />
         <option value="$PROJECT_DIR$/predict_test.py" />
+        <option value="$PROJECT_DIR$/dtree_model.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/gbc_model.py" />
+        <option value="$PROJECT_DIR$/request_conditions.py" />
+=======
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
         <option value="$PROJECT_DIR$/predict.py" />
       </list>
     </option>
@@ -195,7 +248,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,19 +255,15 @@
               <item name="coastal-climate-analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="coastal-climate-analysis" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="coastal-climate-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coastal-climate-analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="cleaning_data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/fogbot/main.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/conda-fog-bot" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -237,6 +285,31 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.predict">
+    <configuration name="dtree_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ksmo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_dtree_model.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dtree_model.py" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gbc_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ksmo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -249,28 +322,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_gbc_model.py" />
+=======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gbc_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="model_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ksmo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_search.py" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,19 +399,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.model_search" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.gbc_model" />
       <item itemvalue="Python.predict" />
       <item itemvalue="Python.predict_test" />
+      <item itemvalue="Python.dtree_model" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.predict" />
-        <item itemvalue="Python.predict_test" />
         <item itemvalue="Python.gbc_model" />
+        <item itemvalue="Python.dtree_model" />
+        <item itemvalue="Python.predict_test" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.model_search" />
       </list>
     </recent_temporary>
   </component>
@@ -385,7 +441,7 @@
     <frame x="47" y="27" width="1255" height="1052" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13392857" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20535715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -538,21 +594,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dtree_predict.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/fogbot/main.py" />
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gbc_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api_result.json" />
+    <entry file="file://$PROJECT_DIR$/predict_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
@@ -560,42 +609,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtree_model.py">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/make_dtree_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/predict_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/make_gbc_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/dtree_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/request_conditions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="177">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+=======
+    <entry file="file://$PROJECT_DIR$/request_conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
           <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+>>>>>>> 8c2647cc82ccb9c180e39323ad7c03270cec206e
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predict_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/predict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="90">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+            <marker date="1538917814177" expanded="true" signature="341:476" ph="..." />
           </folding>
         </state>
       </provider>

@@ -33,10 +33,7 @@ def make_feature_array(obs):
     feat_arr = []
     features = ['wind_degrees', 'wind_mph', 'temp_f', 'dewpoint_f', 'pressure_mb', 'precip_today_in']
     for feat in features:
-        if obs[feat] == '':
-            feat_arr.append(0)
-        else:
-            feat_arr.append(float(obs[feat]))
+        feat_arr.append(float(obs[feat]))
 
     return feat_arr
 
@@ -46,10 +43,6 @@ def main():
     measurements = ['dewpoint_f', 'pressure_mb', 'temp_f', 'precip_today_in', 'wind_degrees', 'wind_mph']
     city_data = get_from_api(input_city)
     observations = get_from_json(city_data, measurements)
-    print('Current Conditions:\n')
-    for feat, label in observations.items():
-        print(feat, label)
-    print()
     input_array = make_feature_array(observations)
 
     return [input_array]

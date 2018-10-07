@@ -13,16 +13,10 @@ def predict(models):
     return predictions
 
 
-def main():
+if __name__ == "__main__":
     models_list = ["dtree_model.pkl", "gbc_model.pkl"]
     prediction_results = predict(models_list)
-
-    return prediction_results
-
-
-if __name__ == "__main__":
-    results = main()
-    for model, results in results.items():
+    for model, results in prediction_results.items():
         if results == [1]:
             print("{} model says.. the fog should roll in tonight!".format(model))
         elif results == [0]:
