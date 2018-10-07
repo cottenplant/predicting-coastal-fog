@@ -106,6 +106,7 @@ def make_feature_array(obs):
     return feat_arr
 ```
 - Currently, I am comparing Decision Tree and Gradient Boosting Classifiers, hence the two outputs. Both had different advantages in terms of precision / recall
+
 ```
 def predict(models, input_features):
     predictions = {}
@@ -115,8 +116,8 @@ def predict(models, input_features):
         predictions[classifier] = pred
 
     return predictions
-
-
+```
+```
 def main():
     input_array = get_input_array()
     models_list = ["dtree_model.pkl", "gbc_model.pkl"]
