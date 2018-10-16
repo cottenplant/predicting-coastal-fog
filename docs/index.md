@@ -2,21 +2,38 @@
 ## Santa Monica, CA
 
 ### predict-fog.py
-Sample output:
+Sample output (predict fog):
 ```
 Current Conditions:
 
 loc Santa Monica, CA
-dewpoint_f 56
-pressure_mb 1007
-temp_f 58.1
-precip_today_in 
-wind_degrees 205
+dewpoint_f 54
+pressure_mb 998
+temp_f 56.8
+precip_today_in 0.00
+wind_degrees 264
+wind_mph 5
+
+Decision Tree Classifier says... the fog should roll in tonight!
+
+```
+Sample output (predict clear):
+```
+Current Conditions:
+
+loc Santa Monica, CA
+dewpoint_f 33
+pressure_mb 1017
+temp_f 56.8
+precip_today_in 0.00
+wind_degrees 51
 wind_mph 0
 
-dtree_model.pkl model says... clear skies this evening!
-gbc_model.pkl model says... clear skies this evening!
+Decision Tree Classifier says... clear skies this evening!
+
 ```
+
+
 
 ## Classifier Summary
 Classifiers were ran against each other at 1000 random states -- summarized below are the mean performance metrics for each model.
