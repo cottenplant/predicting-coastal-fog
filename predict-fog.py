@@ -66,18 +66,19 @@ def predict(models, input_features):
     return predictions
 
 
-def main():
+def main(models_tested):
     input_array = get_input_array()
-    models_list = ["dtree_model.pkl", "gbc_model.pkl"]
-    prediction_results = predict(models_list, input_array)
+    prediction_results = predict(models_tested, input_array)
 
     return prediction_results
 
 
 if __name__ == "__main__":
-    results = main()
+    models_list = ["dtree_model.pkl"]  # , "gbc_model.pkl"]
+    model_dict = {"dtree_model.pkl": "Decision Tree Classifier", "gbc_model.pkl": "Gradient Boosting Classifier"}
+    results = main(models_list)
     for model, results in results.items():
         if results == [1]:
-            print("{} model says.. the fog should roll in tonight!".format(model))
+            print("{} says.. the fog should roll in tonight!".format(model_dict[model]))
         elif results == [0]:
-            print("{} model says... clear skies this evening!".format(model))
+            print("{} says... clear skies this evening!".format(model_dict[model]))
