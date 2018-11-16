@@ -63,29 +63,29 @@ Presented is an analysis of weather conditions and trends both at Santa Monica A
 Datasets were acquired under an open license. KSMO data was downloaded via the Wunderground.com API, and KLAX data was acquired through the NOAA portal online. I haven't published any actual data to avoid any possible issues. Dataset consumption and visualization were accomplished using numpy, pandas, matplotlib, and seaborn, whereas machine learning algorithms were deployed within scikit-learn.
 
 # Analyzing data and features
-## trends
+## Trends
 ![Alt](https://user-images.githubusercontent.com/25386879/45439620-26009e80-b66f-11e8-9c2a-fa0f7179cada.png)
 From the (above) 3d graphs, one can easily discern wind direction, speed and dew point relationships during the period of measurement : 1972 - 2018. Such a comprehenesive representative figure summarizes succinctly the relationshio\p betwewen wind directionn, speed and humidity. Not the 
 Grouping the trade winds (ocean breezes rich in water content an higher dew point are easiy distinguishable from the so-called "Santa Ana" or earsterly winds that occur in Fall and Winter, patterns of persistent high pressure which bring unusually dry and windy deserst air from the valleys to th East of Los Anglees.
 
-## features
-Stirpping down the many features into pricipal components involved eliminating derivative features (i.e. feature which we just conversions or derivations from raw observed data. We also edited for instance a column in the NOAA text which listed Fog, Rain, Snow, Hail, Thunderstorm and Tornado in a binary format to reflect real values for analyis. We selected the most relative and complete features for us in a gamute of machine leaarnning classifiers containd withing the scikit-learn ecosysteeyin
+## Features
+Stripping down the many features into principal components involved eliminating derivative features (i.e. features which were just conversions or derivations from raw observed data). Also edited a column in the NOAA text which listed Fog, Rain, Snow, Hail, Thunderstorm and Tornado in a binary format to reflect real values for analyis. We selected the most relative and complete features for us to run through a gamute of machine learnning classifiers contained within the scikit-learn ecosystem.
 
-## cleaning the data
-Tha data required minimal editing for clarity and dropping of some tagential values, many of whic where incomplete. In the present analysis, we use features with a direct relevance to out hypothesis, namely: how can we predict the occurrence of fog based on certain pre=existing factors.
+## Cleaning the data
+Tha data required minimal editing for clarity and dropping of some tangential values, many of which where incomplete. In the present analysis, we use features with a direct relevance to our hypothesis, namely: how can we predict the occurrence of fog based on certain preexisting conditions.
 
 # Methods, packages and toolkits
-numpy, pandas, saeaborn, plot.ly, scikit-learn and other played an integral roll in the consumption an leverage of this necessary data set
+numpy, pandas, saeaborn, plot.ly, scikit-learn and others played an integral role in the consumption of the data and subsequent algorithm construction
 
 # Data modeling
-## train/test
-We rain a grid search to find and rate the various classifiers for parameters of model efficiency
+## Train/Test
+I ran a grid search to find and rate the various classifiers for parameters of model efficiency: accuracy, precision and recall.
 
-## compare scikit-learn classifiers
-I ran a test script deploying all sci-kit learn classifiers to determine the ideal combination of recall, precision and occasionally atmospheres. The n number of examples of foggy days was far lower than total daily observations
+## Comparing scikit-learn classifiers
+I ran a test script deploying all sci-kit learn classifiers to determine the ideal combination of recall, precision and occasionally atmospheres. The n number of examples of foggy days was far lower than total daily observations, resulting in some lower precision scores.
 
 ## Select – precision, accuracy, recall
-Interesting the gradient boosting model returned the higest accuracy but since our data contain relatively much fewer classified fog events, some sampling error certianly skewered prediction results.
+Interestingly, the gradient boosting model returned the higest accuracy but since our data contain relatively much fewer classified fog events, some sampling error certianly skewered prediction results.
 
 ## Breakdown of fog-predict.py
 - First, current weather conditions are pulled via Wunderground.com API
@@ -146,12 +146,6 @@ def main():
 # Publishing data
 Knowing when fog rolls in, which is frequently a sudden and disappointing event, perhaps to reduce traffic of people heading to the beach as well as provide fire fighters wih cutting endge information. 
 
-## figures
+## Figures
 Various figures of wind patterns plotted agains wind speed have been synthesized and uploaded in the /figures/ folder.
-Please check soon for more updates!
-
-## fog-predict tool
-## FogBot announcements
-
-#Conclusions and future directions
-
+Please check back soon for more updates!
