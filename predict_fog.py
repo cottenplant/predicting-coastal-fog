@@ -21,9 +21,10 @@ def get_from_json(result, meas):
 
     return obs
 
-def make_feature_array(obs, features):
+def make_feature_array(obs, features, dataset):
     feat_arr = []
-    obs['relative_humidity'] = obs['relative_humidity'].strip('%')
+    if dataset == 'ksmo':
+        obs['relative_humidity'] = obs['relative_humidity'].strip('%')
     for feat in features:
         if obs[feat] == '':
             feat_arr.append(0)
@@ -44,15 +45,20 @@ def predict(classifier, input_features):
     return pred
 
 
-def main():
+def main(dataset):
     # Static Vars
     input_city = "CA/Santa_monica"
-    parameters = ['wind_degrees', 'wind_mph', 'temp_f', 'dewpoint_f',
+    if dataset == 'klax':
+        parameters = ['temp_f', 'dewpoint_f', 'visibility_mi', 'wind_mph',
+                      'precip_today_in']
+        model = "klax_GaussianNB_model.pkl"
+    elif dataset == 'ksmo':
+        parameters = ['wind_degrees', 'wind_mph', 'temp_f', 'dewpoint_f',
                 'pressure_mb', 'relative_humidity', 'precip_today_in']
-    model = "DTree_model.pkl"
+        model = "ksmo_DTree_model.pkl"
     city_data = get_from_api(input_city)
     observations = get_from_json(city_data, parameters)
-    input_array = make_feature_array(observations, parameters)
+    input_array = make_feature_array(observations, parameters, dataset)
     prediction_results = predict(model, input_array)
     if prediction_results == [1]:
         print("Decision Tree model says... the fog should roll in tonight!")
@@ -63,4 +69,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    stations = ['ksmo', 'klax']
+    for station in stations:
+        result = main(station)
+        print("(measuring from {} station)\n".format(station))

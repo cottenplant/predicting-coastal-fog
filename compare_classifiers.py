@@ -13,24 +13,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 
-
-def main(rs):
-    df = preprocess_data.init()
-    X = df[['meanwdird', 'meanwindspdm', 'meantempm', 'meandewptm',
-            'meanpressurem', 'mhumidity', 'maxtempm', 'precipm']]
-    y = df['fog']
-
-    # Data Preprocessing
-    sc = StandardScaler()
-    X = sc.fit_transform(X)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,
-                                                        random_state=rs)
-    # Try all Scikit-Learn Classifiers
-    results = get_model(X_train, X_test, y_train, y_test)
-    results = results.set_index('Algorithm')
-    print(results)
-
-    return results
+import warnings
+warnings.filterwarnings(action='ignore')
 
 
 def decision_tree_result(X_train, X_test, y_train, y_test):
@@ -88,5 +72,46 @@ def get_model(X_train, X_test, y_train, y_test):
     return report
 
 
+def run_search(dataset, n):
+    df = pd.DataFrame()
+    for i in range(0, n + 1):
+        print("\nTEST # {}".format(i))
+        results = main(dataset, i)
+        df = pd.concat([df, results])
+    summary = df.groupby('Algorithm').mean()
+    print("\n\n===SUMMARY===")
+    print(summary)
+    summary.to_csv(dataset + '_compare_classifiers_summary.csv')
+
+
+def main(dataset, rs=None):
+    if dataset == 'ksmo':
+        df = preprocess_data.ksmo()
+        features = ['meanwdird', 'meanwindspdm', 'meantempm', 'meandewptm',
+                    'meanpressurem', 'mhumidity', 'maxtempm', 'precipm']
+        target = ['fog']
+    elif dataset == 'klax':
+        df = preprocess_data.klax()
+        features = ['TEMP', 'DEWP', 'VISIB', 'WDSP', 'PRCP']
+        target = ['FOG']
+    else:
+        print("Error! Pass in dataset as kwarg [ksmo, klax].")
+    X = df[features]
+    y = df[target]
+
+    # Data Preprocessing
+    sc = StandardScaler()
+    X = sc.fit_transform(X)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,
+                                                        random_state=rs)
+    # Try all Scikit-Learn Classifiers
+    results = get_model(X_train, X_test, y_train, y_test)
+    results = results.set_index('Algorithm')
+    print(results)
+
+    return results
+
+
 if __name__ == "__main__":
-    main(rs=None)
+    # main('klax', None)
+    run_search('klax', 10)

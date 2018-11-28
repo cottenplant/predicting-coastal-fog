@@ -65,7 +65,7 @@ Datasets were acquired under an open license. KSMO data was downloaded via the W
 # Analyzing data and features
 ## Trends
 ![Alt](https://user-images.githubusercontent.com/25386879/45439620-26009e80-b66f-11e8-9c2a-fa0f7179cada.png)
-From the (above) 3d graphs, one can easily discern wind direction, speed and dew point relationships during the period of measurement : 1972 - 2018. Such a comprehenesive representative figure summarizes succinctly the relationshio\p betwewen wind directionn, speed and humidity. Not the 
+From the (above) 3d graphs, one can easily discern wind direction, speed and dew point relationships during the period of measurement : 1972 - 2018. Such a comprehenesive representative figure summarizes succinctly the relationshio\p betwewen wind directionn, speed and humidity. Not the
 Grouping the trade winds (ocean breezes rich in water content an higher dew point are easiy distinguishable from the so-called "Santa Ana" or earsterly winds that occur in Fall and Winter, patterns of persistent high pressure which bring unusually dry and windy deserst air from the valleys to th East of Los Anglees.
 
 ## Features
@@ -144,7 +144,7 @@ def main():
 ```
 
 # Publishing data
-Knowing when fog rolls in, which is frequently a sudden and disappointing event, perhaps to reduce traffic of people heading to the beach as well as provide fire fighters wih cutting endge information. 
+Knowing when fog rolls in, which is frequently a sudden and disappointing event, perhaps to reduce traffic of people heading to the beach as well as provide fire fighters wih cutting endge information.
 
 ## Figures
 Various figures of wind patterns plotted agains wind speed have been synthesized and uploaded in the /figures/ folder.

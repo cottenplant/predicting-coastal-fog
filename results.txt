@@ -1,4 +1,4 @@
-===SUMMARY===
+===SUMMARY=== n=1000
                               Accuracy  Precision    Recall
 Algorithm                                                  
 Decision Tree                 0.924232   0.308342  0.334227
@@ -32,15 +32,33 @@ weighted avg       0.93      0.87      0.90      1802
 ================================
 *with current conditions parameters
 
-===SUMMARY===
-                              Accuracy  Precision    Recall  Confusion_tp
-Algorithm                                                                
-Decision Tree                 0.913425   0.220181  0.242991     21.043956
-Gaussian NB                   0.934009   0.148987  0.050761      4.392607
-Gradient Boosting Classifier  0.946032   0.490769  0.139122     12.023976
-K-Nearest Neighbors           0.942717   0.360625  0.090866      7.832168
-Linear SVM                    0.946541   0.054978  0.000764      0.063936
-Logistic Regression           0.947023   0.575643  0.042442      3.642358
-Random Forest Classifier      0.945209   0.443448  0.088087      7.597403
-rbf SVM                       0.946497   0.000000  0.000000      0.000000
+===SUMMARY=== n=1000
+                              Accuracy  Precision    Recall  Confusion_tp   ROC AUC
+Algorithm                                                                          
+Decision Tree                 0.913540   0.220894  0.243509     21.081918  0.597462
+Gaussian NB                   0.934009   0.148987  0.050761      4.392607  0.517329
+Gradient Boosting Classifier  0.946024   0.490392  0.138925     12.007992  0.565280
+K-Nearest Neighbors           0.942717   0.360625  0.090866      7.832168  0.540863
+Linear SVM                    0.946535   0.052947  0.000743      0.061938  0.500346
+Logistic Regression           0.947023   0.575643  0.042442      3.642358  0.520288
+Random Forest Classifier      0.945466   0.455899  0.090204      7.780220  0.542000
+rbf SVM                       0.946497   0.000000  0.000000      0.000000  0.499974
+
+
+
+
+
+=========KLAX========
+===SUMMARY=== n=10
+                              Accuracy  Precision    Recall  Confusion_tp   ROC AUC
+Algorithm                                                                          
+Decision Tree                 0.769224   0.560117  0.567896    733.545455  0.704467
+Gaussian NB                   0.812191   0.624570  0.716772    926.090909  0.781476
+Gradient Boosting Classifier  0.835506   0.703304  0.646803    835.636364  0.774785
+K-Nearest Neighbors           0.814207   0.658124  0.610231    788.272727  0.748590
+Linear SVM                    0.818182   0.704718  0.530337    685.090909  0.725569
+Logistic Regression           0.822471   0.710162  0.548194    708.181818  0.734222
+Random Forest Classifier      0.814909   0.682024  0.554164    715.909091  0.731010
+rbf SVM                       0.832622   0.708385  0.617051    797.181818  0.763255
+
 
