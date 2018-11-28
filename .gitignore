@@ -1,1 +1,11 @@
+/raw_data/
 /data/
+/cleaning_data/
+/eda/
+/ml-test/
+/__pycache__/
+/test/
+/fogbot/
+/venv/
+/.idea/
+/.ipynb_checkpoints/
