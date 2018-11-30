@@ -12,14 +12,15 @@ def get_from_api(city):
     return data
 
 
-def get_from_json(result, meas):
+def get_from_json(res, meas):
     obs = {}
-    current = result['current_observation']
+    current = res['current_observation']
     obs['loc'] = current['display_location']['full']
     for key in meas:
         obs[key] = current[key]
 
     return obs
+
 
 def make_feature_array(obs, features, dataset):
     feat_arr = []
@@ -46,7 +47,8 @@ def predict(classifier, input_features):
 
 
 def main(dataset):
-    # Static Vars
+    parameters = []
+    model = []
     input_city = "CA/Santa_monica"
     if dataset == 'klax':
         parameters = ['temp_f', 'dewpoint_f', 'visibility_mi', 'wind_mph',
@@ -54,7 +56,7 @@ def main(dataset):
         model = "klax_GaussianNB_model.pkl"
     elif dataset == 'ksmo':
         parameters = ['wind_degrees', 'wind_mph', 'temp_f', 'dewpoint_f',
-                'pressure_mb', 'relative_humidity', 'precip_today_in']
+                      'pressure_mb', 'relative_humidity', 'precip_today_in']
         model = "ksmo_DTree_model.pkl"
     city_data = get_from_api(input_city)
     observations = get_from_json(city_data, parameters)
@@ -63,7 +65,7 @@ def main(dataset):
     if prediction_results == [1]:
         print("Decision Tree model says... the fog should roll in tonight!")
     elif prediction_results == [0]:
-        print("Decision Tree model says... clear skies this evening!")
+        print("Decision Tree model says... no fog this evening!")
 
     return prediction_results
 
@@ -72,4 +74,4 @@ if __name__ == "__main__":
     stations = ['ksmo', 'klax']
     for station in stations:
         result = main(station)
-        print("(measuring from {} station)\n".format(station))
+        print("(based on data from {} station)\n".format(station))
