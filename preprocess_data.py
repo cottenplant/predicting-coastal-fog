@@ -1,24 +1,24 @@
 # Initialize imports
-import numpy as np
 import pandas as pd
 
-# Static Vars
-data_dir = r'data/'
-ksmo_file = 'WUG_SMO_Data_Clean.csv'
-klax_file = 'NOAA_LAX_Data_Clean.csv'
 
+class Preprocess:
+    def __init__(self):
+        self.data_dir = r'data/'
+        self.ksmo_file = 'WUG_SMO_Data_Clean.csv'
+        self.klax_file = 'NOAA_LAX_Data_Clean.csv'
+        self.df = pd.DataFrame()
 
-def ksmo():
-    df = pd.read_csv(data_dir + ksmo_file)
-    df['mhumidity'] = (df['minhumidity'] + df['maxhumidity']) / 2
-    df = df.drop(['Unnamed: 0', 'year', 'month', 'day', 'dayofweek'], axis=1)
-    df = df.dropna()
+    def ksmo(self):
+        self.df = pd.read_csv(self.data_dir + self.ksmo_file)
+        self.df['mhumidity'] = (self.df['minhumidity'] + self.df['maxhumidity']) / 2
+        self.df = self.df.drop(['Unnamed: 0', 'year', 'month', 'day', 'dayofweek'], axis=1)
+        self.df = self.df.dropna()
 
-    return df
+        return self.df
 
+    def klax(self):
+        self.df = pd.read_csv(self.data_dir + self.klax_file)
+        self.df['FOG'] = self.df['FRSHTT'].apply(lambda col: 1 if col == 'fog' else 0)
 
-def klax():
-    df = pd.read_csv(data_dir + klax_file)
-    df['FOG'] = df['FRSHTT'].apply(lambda col: 1 if col == 'fog' else 0)
-
-    return df
+        return self.df
