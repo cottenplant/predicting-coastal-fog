@@ -1,3 +1,52 @@
+
+
+```python
+# Import data science packages
+%matplotlib inline
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from math import radians
+```
+
+
+```python
+# Import machine learning packages
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.model_selection import train_test_split, KFold
+from sklearn.metrics import precision_score, accuracy_score, recall_score, confusion_matrix, classification_report
+from sklearn.naive_bayes import GaussianNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.externals import joblib
+```
+
+
+```python
+# Import data through preprocessing script
+import preprocess_data
+df = preprocess_data.init()
+```
+
+
+```python
+sns.set_style('whitegrid')
+plt.rcParams['axes.labelsize'] = 14
+plt.rcParams['xtick.labelsize'] = 12
+plt.rcParams['ytick.labelsize'] = 12
+plt.rcParams['text.color'] = 'k'
+plt.rcParams['figure.figsize'] = 20, 16
+```
+
+
+```python
+df.head()
+```
+
+
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
