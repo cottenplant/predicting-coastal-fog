@@ -1,17 +1,3 @@
-
-```python
-# Import data through preprocessing script
-import preprocess_data
-df = preprocess_data.init()
-```
-
-```python
-df.head()
-```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
